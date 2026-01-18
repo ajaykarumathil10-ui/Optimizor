@@ -107,5 +107,10 @@ namespace Optimizor
       AboutDeveloper aboutDeveloper = new AboutDeveloper();
       aboutDeveloper.Show();
     }
+
+    private void okButton_Click(object sender, EventArgs e)
+    {
+      this.Close();
+    }
   }
 }

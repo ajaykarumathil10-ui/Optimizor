@@ -29,6 +29,7 @@
     {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
       this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+      this.button1 = new System.Windows.Forms.Button();
       this.logoPictureBox = new System.Windows.Forms.PictureBox();
       this.labelProductName = new System.Windows.Forms.Label();
       this.labelVersion = new System.Windows.Forms.Label();
@@ -36,7 +37,6 @@
       this.labelCompanyName = new System.Windows.Forms.Label();
       this.textBoxDescription = new System.Windows.Forms.TextBox();
       this.okButton = new System.Windows.Forms.Button();
-      this.button1 = new System.Windows.Forms.Button();
       this.tableLayoutPanel.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
       this.SuspendLayout();
@@ -67,6 +67,20 @@
       this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
       this.tableLayoutPanel.Size = new System.Drawing.Size(417, 265);
       this.tableLayoutPanel.TabIndex = 0;
+      // 
+      // button1
+      // 
+      this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
+      this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+      this.button1.Location = new System.Drawing.Point(215, 196);
+      this.button1.Name = "button1";
+      this.button1.Size = new System.Drawing.Size(199, 34);
+      this.button1.TabIndex = 1;
+      this.button1.Text = "About Developer";
+      this.button1.UseVisualStyleBackColor = false;
+      this.button1.Click += new System.EventHandler(this.button1_Click);
       // 
       // logoPictureBox
       // 
@@ -151,20 +165,7 @@
       this.okButton.Size = new System.Drawing.Size(199, 26);
       this.okButton.TabIndex = 24;
       this.okButton.Text = "&OK";
-      // 
-      // button1
-      // 
-      this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-      this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-      this.button1.Location = new System.Drawing.Point(215, 196);
-      this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(199, 34);
-      this.button1.TabIndex = 1;
-      this.button1.Text = "About Developer";
-      this.button1.UseVisualStyleBackColor = false;
-      this.button1.Click += new System.EventHandler(this.button1_Click);
+      this.okButton.Click += new System.EventHandler(this.okButton_Click);
       // 
       // AboutBox
       // 
